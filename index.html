@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Level up your Excel skills with curated tutorials, resources, events, and a friendly community." />
+    <meta property="og:title" content="Excel Lift — Learn, Build, Connect" />
+    <meta property="og:description" content="Level up your Excel skills with curated tutorials, resources, events, and a friendly community." />
+    <meta property="og:type" content="website" />
+    <title>Excel Lift — Learn, Build, Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true">⌗</span>
+          <span class="brand-text">Excel Lift</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="#learn">Learn</a>
+          <a href="#formulas">Formulas</a>
+          <a href="#tips">Tips</a>
+          <a href="#resources">Resources</a>
+          <a href="#community">Community</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Level up your Excel skills</h1>
+            <p>Curated learning paths, practical templates, and an active community to help you move from formulas to full-on solutions.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#learn">Start learning</a>
+              <a class="btn btn-secondary" href="#community">Join community</a>
+            </div>
+            <div class="kpis" role="group" aria-label="Highlights">
+              <div class="kpi"><strong id="kpi-tutorials">120+</strong><span>Tutorials</span></div>
+              <div class="kpi"><strong id="kpi-templates">45+</strong><span>Templates</span></div>
+                             <div class="kpi"><strong id="kpi-commands">25+</strong><span>Automation Tools</span></div>
+              <div class="kpi"><strong id="kpi-members">5k+</strong><span>Members</span></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="grid-visual">
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell highlight"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn" class="section">
+        <div class="container">
+          <h2>Guided learning tracks</h2>
+          <p class="section-sub">Pick a path and progress step-by-step.</p>
+          <div class="cards tracks">
+            <article class="card">
+              <h3>Beginner Essentials</h3>
+              <p>Interface, formatting, tables, basic formulas, and charts.</p>
+              <ul>
+                <li>Navigation & tables</li>
+                <li>SUM, AVERAGE, COUNT</li>
+                <li>Basic charts</li>
+              </ul>
+              <a class="card-cta" href="#resources" data-filter="Beginner">Explore resources →</a>
+            </article>
+            <article class="card">
+              <h3>Formulas & Logic</h3>
+              <p>Master lookups, text, date math, and dynamic arrays.</p>
+              <ul>
+                <li>IF, IFS, SWITCH</li>
+                <li>VLOOKUP/XLOOKUP</li>
+                <li>FILTER, UNIQUE, LET</li>
+              </ul>
+              <a class="card-cta" href="#resources" data-filter="Formulas">Explore resources →</a>
+            </article>
+            <article class="card">
+              <h3>Data Analysis</h3>
+              <p>PivotTables, Power Query, and data cleaning workflows.</p>
+              <ul>
+                <li>PivotTables & charts</li>
+                <li>Power Query basics</li>
+                <li>Data validation</li>
+              </ul>
+              <a class="card-cta" href="#resources" data-filter="Analysis">Explore resources →</a>
+            </article>
+            <article class="card">
+              <h3>Automation with VBA</h3>
+              <p>Record macros, write procedures, and build user forms.</p>
+              <ul>
+                <li>Macro recorder</li>
+                <li>VBA procedures</li>
+                <li>UserForms & events</li>
+              </ul>
+              <a class="card-cta" href="#resources" data-filter="VBA">Explore resources →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulas" class="section alt">
+        <div class="container">
+          <h2>Essential Excel Formulas</h2>
+          <p class="section-sub">Master the most important formulas with examples and explanations.</p>
+          <div class="formula-categories">
+            <div class="formula-category">
+              <h3>Basic Math Functions</h3>
+              <div class="formula-list">
+                <div class="formula-item">
+                  <h4>SUM</h4>
+                  <code>=SUM(A1:A10)</code>
+                  <p>Adds all numbers in a range</p>
+                </div>
+                <div class="formula-item">
+                  <h4>AVERAGE</h4>
+                  <code>=AVERAGE(A1:A10)</code>
+                  <p>Calculates the mean of numbers</p>
+                </div>
+                <div class="formula-item">
+                  <h4>COUNT</h4>
+                  <code>=COUNT(A1:A10)</code>
+                  <p>Counts cells with numbers</p>
+                </div>
+              </div>
+            </div>
+            <div class="formula-category">
+              <h3>Text Functions</h3>
+              <div class="formula-list">
+                <div class="formula-item">
+                  <h4>LEFT</h4>
+                  <code>=LEFT(text, num_chars)</code>
+                  <p>Extracts characters from left</p>
+                </div>
+                <div class="formula-item">
+                  <h4>RIGHT</h4>
+                  <code>=RIGHT(text, num_chars)</code>
+                  <p>Extracts characters from right</p>
+                </div>
+                <div class="formula-item">
+                  <h4>CONCATENATE</h4>
+                  <code>=CONCATENATE(text1, text2)</code>
+                  <p>Joins text together</p>
+                </div>
+              </div>
+            </div>
+            <div class="formula-category">
+              <h3>Lookup Functions</h3>
+              <div class="formula-list">
+                <div class="formula-item">
+                  <h4>VLOOKUP</h4>
+                  <code>=VLOOKUP(lookup_value, table_array, col_index, [range_lookup])</code>
+                  <p>Vertical lookup in table</p>
+                </div>
+                <div class="formula-item">
+                  <h4>XLOOKUP</h4>
+                  <code>=XLOOKUP(lookup_value, lookup_array, return_array)</code>
+                  <p>Modern lookup function</p>
+                </div>
+              </div>
+            </div>
+            <div class="formula-category">
+              <h3>Logical Functions</h3>
+              <div class="formula-list">
+                <div class="formula-item">
+                  <h4>IF</h4>
+                  <code>=IF(logical_test, value_if_true, value_if_false)</code>
+                  <p>Conditional logic</p>
+                </div>
+                <div class="formula-item">
+                  <h4>IFS</h4>
+                  <code>=IFS(logical_test1, value1, logical_test2, value2)</code>
+                  <p>Multiple conditions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tips" class="section">
+        <div class="container">
+          <h2>Excel Tips & Tricks</h2>
+          <p class="section-sub">Time-saving shortcuts and techniques to boost your productivity.</p>
+          <div class="tips-categories">
+            <div class="tip-category-card">
+              <h3>Navigation Shortcuts</h3>
+              <div class="tip-list">
+                <div class="tip-item">
+                  <kbd>Ctrl + Arrow</kbd>
+                  <span>Jump to edge of data</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + Home</kbd>
+                  <span>Go to cell A1</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>F5</kbd>
+                  <span>Open Go To dialog</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + Page Up/Down</kbd>
+                  <span>Switch between sheets</span>
+                </div>
+              </div>
+            </div>
+            <div class="tip-category-card">
+              <h3>Selection Tricks</h3>
+              <div class="tip-list">
+                <div class="tip-item">
+                  <kbd>Ctrl + A</kbd>
+                  <span>Select all data in region</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Shift + Arrow</kbd>
+                  <span>Extend selection</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + Shift + Arrow</kbd>
+                  <span>Select to edge of data</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Double-click border</kbd>
+                  <span>Select to edge</span>
+                </div>
+              </div>
+            </div>
+            <div class="tip-category-card">
+              <h3>Editing Shortcuts</h3>
+              <div class="tip-list">
+                <div class="tip-item">
+                  <kbd>F2</kbd>
+                  <span>Edit current cell</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + Enter</kbd>
+                  <span>Fill selected cells</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Alt + Enter</kbd>
+                  <span>New line in cell</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + D</kbd>
+                  <span>Copy from cell above</span>
+                </div>
+              </div>
+            </div>
+            <div class="tip-category-card">
+              <h3>Formula Tricks</h3>
+              <div class="tip-list">
+                <div class="tip-item">
+                  <kbd>F4</kbd>
+                  <span>Cycle absolute references</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + `</kbd>
+                  <span>Toggle formula view</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>F9</kbd>
+                  <span>Evaluate formula parts</span>
+                </div>
+                <div class="tip-item">
+                  <kbd>Ctrl + Shift + Enter</kbd>
+                  <span>Array formulas (legacy)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Curated resources</h2>
+              <p class="section-sub">Tutorials, templates, and tools. Search and filter by topic.</p>
+            </div>
+            <div class="filters">
+              <div class="search-row">
+                <input id="search" class="input" type="search" placeholder="Search resources (e.g., XLOOKUP, PivotTable)" aria-label="Search resources" />
+                <select id="difficulty-filter" class="input" aria-label="Filter by difficulty">
+                  <option value="All">All difficulties</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </div>
+              <div class="chips" role="listbox" aria-label="Filter by tag">
+                <button class="chip is-active" data-tag="All" aria-pressed="true">All</button>
+                <button class="chip" data-tag="Beginner">Beginner</button>
+                <button class="chip" data-tag="Formulas">Formulas</button>
+                <button class="chip" data-tag="Analysis">Analysis</button>
+                <button class="chip" data-tag="Power Query">Power Query</button>
+                <button class="chip" data-tag="VBA">VBA</button>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="resource-grid" class="cards grid"></div>
+          <p id="resource-empty" class="empty hidden">No results. Try a different search or filter.</p>
+        </div>
+      </section>
+
+
+
+      <section id="community" class="section alt">
+        <div class="container community">
+          <div class="community-copy">
+            <h2>Join the community</h2>
+            <p>Get help fast, share your wins, and find collaborators for your next spreadsheet project.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#" onclick="window.alert('Coming soon: Invite link!')">Join the forum</a>
+              <a class="btn btn-secondary" href="#newsletter">Subscribe newsletter</a>
+            </div>
+                         <ul class="checklist">
+               <li>Q&A for formulas, Power Query, and VBA</li>
+               <li>Review your workbook for performance and design</li>
+               <li>Find templates and share your own</li>
+               <li>Get help with automation workflows</li>
+             </ul>
+          </div>
+          <div class="testimonials">
+            <blockquote>
+              "I finally understand dynamic arrays. The examples made it click."
+              <cite>— Priya M.</cite>
+            </blockquote>
+            <blockquote>
+              "The community saved me hours on a messy data cleanup."
+              <cite>— Alex R.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="section">
+        <div class="container">
+          <div class="newsletter">
+            <div>
+              <h2>Get weekly Excel tips</h2>
+              <p class="section-sub">One practical tutorial every Friday. No spam, unsubscribe anytime.</p>
+            </div>
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" class="input" type="email" placeholder="you@example.com" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+              <p id="newsletter-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Is this free?</summary>
+            <p>Yes. All core learning tracks and many resources are free. Some workshops may be paid.</p>
+          </details>
+          <details>
+            <summary>Where should I start as a beginner?</summary>
+            <p>Begin with the Beginner Essentials track, then move to Formulas & Logic. Use the filters to find beginner-friendly resources.</p>
+          </details>
+          <details>
+            <summary>Do I need VBA?</summary>
+            <p>No. VBA is optional. Many automations are possible with Power Query and dynamic arrays.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">⌗</span>
+          <span class="brand-text">Excel Lift</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#learn">Learn</a>
+          <a href="#resources">Resources</a>
+          <a href="#community">Community</a>
+        </nav>
+        <p class="copyright">© <span id="year"></span> Excel Lift. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
+
